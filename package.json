@@ -14,7 +14,12 @@
     "build": "node build/build.js",
     "commitmsg": "validate-commit-msg",
     "precommit": "npm run lint"
-
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint",
+      "commit-msg": "validate-commit-msg"
+    }
   },
   "dependencies": {
     "vue": "^2.6.12",
