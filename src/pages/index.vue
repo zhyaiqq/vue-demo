@@ -4,6 +4,7 @@
     <p v-for="(item, index) in list" :key="index">
       <router-link :to="item.route">{{ item.text }}</router-link>
     </p>
+    <p>text</p>
   </div>
 </template>
 
